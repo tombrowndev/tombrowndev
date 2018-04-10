@@ -167,7 +167,7 @@
 					// Update the game message
 					gameMessage.innerText = `You've found ${matchCount} out of 8 pairs captain!`;
 
-					if(matchCount == 2) {
+					if(matchCount == 8) {
 
 						// Finish the game
 						finishGame();
