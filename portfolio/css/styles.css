@@ -1,0 +1,109 @@
+/*
+ * Font Imports
+ */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/*
+ * Global Styles and Reset
+ */
+html, body, p, h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+p, h1, h2, h3, h4, h5 {
+	line-height: 1.3em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+}
+
+p, a {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	color: #444;
+}
+
+a {
+	color: #1b90a9;
+}
+
+.site-container {
+	position: relative;
+}
+
+img.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+ * Header
+ */
+
+.site-header {
+	text-align: center;
+	padding-bottom: 15px;
+	margin: 10px 10px 20px;
+	border-bottom: 4px solid #e5e5e5;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo-container, .title-container {
+	width: 100%;
+}
+
+/*
+ * Banner
+ */
+
+.banner {
+	text-align: center;
+}
+
+/*
+ * Featured Work
+ */
+
+.featured-work {
+	margin: 20px 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.featured-work .featured-work-title {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	border-bottom: 4px solid #e5e5e5;
+}
+
+.featured-work .project {
+	text-align: center;
+	background-color: #fff;
+	margin: 0 auto 20px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.featured-work .project img {
+	width: 100%;
+	max-width: 400px;
+}
+
+.featured-work .project-title {
+	margin: 20px 0;
+	font-size: 1.6em;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	margin-bottom: 20px;
+}

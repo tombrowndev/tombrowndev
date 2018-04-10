@@ -1,0 +1,44 @@
+@media screen and (min-width: 480px) {
+	.site-header {
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.logo-container, .title-container {
+		width: 50%;
+	}
+
+	.title-container {
+		text-align: right;
+	}
+
+	.site-header .title {
+		font-size: 2.6em;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+	.site-container {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.site-header .title {
+		font-size: 3.5em;
+	}
+
+	.site-header, .featured-work {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.featured-work .project {
+		width: 30%;
+		margin-right: 5%;
+	}
+
+	.featured-work .project.last {
+		margin-right: 0%;
+	}
+}
