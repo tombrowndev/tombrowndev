@@ -7,12 +7,14 @@
 	const mask = document.getElementById('mask');
 	const model = document.getElementById('finishedGameModal');
 	const gameMessage = document.getElementById('gameMessage');
+	const timer = document.getElementById('timer');
 
 	// Game variables
 	let tempCard = null;
 	let startTime = 0;
 	let cardFlips = 0;
 	let matchCount = 0;
+	let myTimer;
 
 	// Event Listeners
 	startGameButton.addEventListener('click', newGame);
@@ -36,6 +38,8 @@
 
 		// Start the clock
 		startTime = getTheTime();
+		updateTimer();
+		myTimer = setInterval(updateTimer, 1000);
 
 		// Remove cards from previous game
 		while (cardArea.firstChild) {
@@ -169,6 +173,9 @@
 
 					if(matchCount == 8) {
 
+						// Stop the timer
+						clearInterval(myTimer);
+
 						// Finish the game
 						finishGame();
 
@@ -218,6 +225,21 @@
 
 		let d = new Date();
 		return d.getTime();
+
+	}
+
+	// Updates the clock with the game time
+	function updateTimer() {
+
+		// Work out how many seconds the game has lasted so far
+		let distance = Math.floor((getTheTime() - startTime));
+
+		let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  		let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  		let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  		// Display to the player
+  		timer.innerText = `Time elapsed: ${hours}h ${minutes}m ${seconds}s`;
 
 	}
 
