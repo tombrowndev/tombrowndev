@@ -26,6 +26,11 @@ p {
 	margin-bottom: 5px;
 }
 
+em {
+	font-weight: bold;
+	color: #39310e;
+}
+
 /* BUTTONS */
 .button {
 	background-color: #7c3347;
@@ -58,10 +63,7 @@ p {
 }
 
 #gameMessage {
-	color: #39310e;
-	font-weight: bold;
 	font-size: 1.2em;
-	display: block;
 }
 
 #startGame {
