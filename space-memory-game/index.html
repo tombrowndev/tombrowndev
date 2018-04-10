@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Space Memory Game</title>
+
+	<!-- Stylesheets -->
+	<link href="public/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="public/css/styles.css" rel="stylesheet" type="text/css">
+	<link href="public/css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div id="siteContainer">
+
+		<header id="siteHeader">
+			<h1>Space Memory Game</h1>
+		</header>
+
+		<section id="gameContainer">
+
+			<header id="gameControls">
+				
+				<span id="gameMessage">Ready to launch in 3, 2, 1...</span>
+
+				<button id="startGame" class="button">Launch Game</button>
+
+			</header>
+
+			<article id="gameBoard">
+
+				<div id="cardArea">
+					<!-- This is where game.js adds cards -->
+					Test
+				</div>
+				
+			</article>
+			
+		</section>
+
+		<footer id="siteFooter">
+			<p>
+				Space Image by <a href="http://www.freepik.com/freepik-exclusive-vectors">@freepik"</a> from <a href="https://www.freepik.com/free-vector/star-background-with-planets_1594486.htm">freepik</a>
+			</p>
+			<p>
+			Icons by <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from <a href="https://www.flaticon.com/packs/space-3">FLATICON</a>
+			</p>
+		</footer>
+
+	</div>
+
+	<div id="finishedGameModal" class="modal">
+			
+			<h2>Congratulations, mission complete!</h2>
+
+			<div id="statsContainer">
+
+				<p>Number Flips: <span id="numberOfFlips">0</span></p>
+
+				<p>Time Taken: <span id="timeTaken">0</span></p>
+
+				<p>Total Score: <span id="finalScore">0</span></p>
+
+				<p>Overall Rating: <span id="finalStars">0</span></p>
+
+			</div>
+
+			<br><br>
+
+			<button id="closeModal" class="button">Launch a New Game</button>
+
+		</div>
+
+	<div id="mask"></div>
+	
+	<!-- Scripts -->
+	<script src="public/js/jquery.min.js"></script>
+	<script src="public/js/jquery-ui.min.js"></script>
+	<script src="public/js/jquery-flip.min.js"></script>
+	<script src="public/js/game.js"></script>
+</body>
+</html>

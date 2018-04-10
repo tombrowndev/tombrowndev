@@ -1,0 +1,199 @@
+/* FONTS */
+@font-face {
+    font-family: Nasa;
+    src: url(../fonts/Nasa.ttf);
+}
+
+/* STRUCTURE */
+
+body {
+	background-color: #05111f;
+	background-image: url(../images/site-bg.png);
+	background-size: cover;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.3em;
+}
+
+#siteContainer {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* TEXT */
+p {
+	margin-bottom: 5px;
+}
+
+/* BUTTONS */
+.button {
+	background-color: #7c3347;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* HEADER */
+
+#siteHeader {
+	padding: 20px 0;
+	text-align: center;
+}
+
+#siteHeader h1 {
+	font-family: Nasa, cursive;
+	font-size: 2em;
+	color: #fff;
+}
+
+/* GAME AREA */
+#gameControls {
+	background-color: #ddcb71;
+	padding: 20px;
+	text-align: center;
+	border-radius: 6px;
+}
+
+#gameMessage {
+	color: #39310e;
+	font-weight: bold;
+	font-size: 1.2em;
+	display: block;
+}
+
+#startGame {
+	margin-top: 10px;
+}
+
+#gameBoard {
+	position: relative;
+	display: none;
+	margin-top: 20px;
+	border-radius: 6px;
+	
+	background: #e0cf73;
+	background: -moz-linear-gradient(top, #e0cf73 0%, #7c3347 100%);
+	background: -webkit-linear-gradient(top, #e0cf73 0%,#7c3347 100%);
+	background: linear-gradient(to bottom, #e0cf73 0%,#7c3347 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0cf73', endColorstr='#7c3347',GradientType=0 );
+}
+
+/* Creates the height of the game board to a ration of 1:1 */
+#gameBoard:before {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+#cardArea {
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	bottom: 1%;
+	left: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#cardArea .card {
+	width: 22%;
+	height: 22%;
+}
+
+#cardArea .card .front, #cardArea .card .back {
+	height: 100%;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.48);
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.48);
+}
+
+#cardArea .card .front {
+	background-color: #091457;
+	background-image: url(../images/card-back.png);
+	background-size: 120%;
+	cursor: pointer;
+}
+
+#cardArea .card .back {
+	background-color: #fff;
+	background-size: 60%;
+}
+
+/* FOOTER */
+#siteFooter {
+	padding: 20px;
+	text-align: center;
+}
+
+#siteFooter p {
+	color: #ddd;
+	font-size: 1em;
+}
+
+#siteFooter p a {
+	color: #fff;
+}
+
+/* MODAL */
+.modal {
+	width: 300px;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: #fff;
+	left: 50%;
+	top: 15%;
+	margin-left: -150px;
+
+	position: absolute;
+	z-index: 10;
+
+	display: none;
+	box-sizing: border-box;
+}
+
+#mask {
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	display: none;
+}
+
+#finishedGameModal {
+	text-align: center;
+}
+
+#finishedGameModal h2 {
+	font-family: Nasa, cursive;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+#statsContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#statsContainer p {
+	width: 100%;
+	text-align: center;
+}
+
+#numberOfFlips, #timeTaken, #finalScore, #finalStars {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #7c3347;
+}

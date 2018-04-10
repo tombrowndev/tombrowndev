@@ -1,0 +1,70 @@
+/* Medium Screens */
+
+@media screen and (min-width: 480px) {
+
+	#siteHeader {
+		padding: 30px 0;
+	}
+	
+	#siteHeader h1 {
+		font-size: 2.6em;
+	}
+
+	.modal {
+		width: 400px;
+		margin-left: -200px;
+	}
+
+	#finishedGameModal h2 {
+		font-size: 2em;
+		line-height: 1.3em;
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Large Screens */
+
+@media screen and (min-width: 600px) {
+
+	#siteHeader {
+		padding: 40px 0;
+	}
+
+	#siteHeader h1 {
+		font-size: 3.2em;
+	}
+
+	#gameControls {
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	#gameMessage {
+		width: 75%;
+	}
+
+	#startGame {
+		width: 25%;
+		margin-top: 0;
+	}
+
+	.modal {
+		width: 500px;
+		margin-left: -250px;
+	}
+
+	#finishedGameModal h2 {
+		font-size: 2.5em;
+		line-height: 1.3em;
+		margin-bottom: 30px;
+	}
+
+	#statsContainer p {
+		width: 50%;
+		text-align: left;
+	}
+
+}
