@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch|Open+Sans);
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+
+	background: url(images/background.jpg) no-repeat center center fixed; 
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+
+ 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.curved-corners {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.animal-card {
+	width: 300px;
+	margin: 100px auto;
+	background-color: rgba(255,255,255,0.4);
+	padding: 10px;
+
+	-webkit-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.21);
+	-moz-box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.21);
+	box-shadow: 0px 10px 29px 0px rgba(0,0,0,0.21);
+
+}
+
+.animal-name {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Cabin Sketch", cursive;
+	font-size: 5em;
+	line-height: 1.3em;
+	color: #613c34;
+	text-align: center;
+}
+
+.animal-image {
+	margin-bottom: 5px;
+}
+
+.animal-information {
+	padding: 0 10px;
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+.interesting-fact {
+	font-style: italic;
+}
+
+.details-list {
+	padding-left: 0;
+}
+
+.details-list .title {
+	font-weight: bold;
+}
+
+.details-list .item {
+	list-style-type: none;
+}
