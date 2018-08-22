@@ -38,6 +38,11 @@ self.addEventListener('activate', function(event) {
         event.respondWith(caches.match('/index.html'));
         return;
       }
+
+      if(requestUrl.pathname.startsWith('/restaurant.html')) {
+        event.respondWith(caches.match('/restaurant.html'));
+        return;
+      }
     }
     event.respondWith(
       caches.match(event.request).then(function(response) {
